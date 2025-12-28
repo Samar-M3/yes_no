@@ -21,6 +21,7 @@ body{
     gap: 20px;
     max-width: 500px;
     margin: 20px;
+     position: relative;
 }
 
 .cat{
@@ -71,31 +72,30 @@ p{
         margin: 0;
     }
 
+    /* Make image & gif bigger */
     .cat {
-        max-width: 180px;
+        max-width: 260px; /* increase size */
         transition-duration: 1s;
     }
 
     p {
         font-size: 18px;
-        transition-duration: 1.5s;
-        transition-delay: 0s;
     }
 
+    /* Keep buttons normal */
     .btn {
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
+        flex-direction: row; /* NOT column */
+        gap: 15px;
     }
 
     .btn a {
-        font-size: 20px;
-        padding: 10px 0;
-        width: 100%;
+        font-size: 18px;
+        padding: 8px 14px;
+        width: auto; /* IMPORTANT */
         border-radius: 15px;
     }
 
-    /* Disable hover scaling on mobile */
+    /* Disable hover effect on mobile */
     .btn a:hover {
         transform: none;
         background-color: white;
